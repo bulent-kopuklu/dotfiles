@@ -1,0 +1,159 @@
+
+
+ctrl+alt+p
+    i3-nagbar -t warning -m 'poweroff' -b 'y' 'systemctl poweroff'
+ctrl+alt+r
+    i3-nagbar -t warning -m 'reboot' -b 'y' 'systemctl reboot'
+ctrl+alt+s
+    i3-nagbar -t warning -m 'suspend' -b 'y' 'systemctl suspend'
+ctrl+alt+l
+    i3-nagbar -t warning -m 'logout' -b 'y' 'i3-msg exit'
+
+ctrl+alt+Delete
+    ~/.config/polybar/v1/scripts/powermenu.sh 
+
+super+Return
+    alacritty
+
+super+Insert
+    rofi -sidebar-mode -show drun -modi drun,run
+
+XF86LaunchA
+    rofi -sidebar-mode -show drun -modi drun,run
+    
+super+shift+Insert
+    rofi -show window
+
+XF86LaunchB
+    rofi -show window
+
+super+Delete
+    i3-msg kill
+
+super+f
+    i3-msg fullscreen
+
+super+l
+    i3lock
+
+super+Tab
+    i3-msg workspace back_and_forth
+$mod+shift+Tab
+    i3-msg move container to workspace back_and_forth
+
+super+Left
+    i3-msg focus left
+super+Down
+    i3-msg focus down
+super+Up
+    i3-msg focus up
+super+Right
+    i3-msg focus right
+
+super+shift+Left
+    i3-msg move left
+super+shift+Down
+    i3-msg move down
+super+shift+Up
+    i3-msg move up
+super+shift+Right
+    i3-msg move right
+
+super+shift+c
+    i3-msg reload
+
+super+shift+r
+    i3-msg restart
+
+super+{1-6}
+    i3-msg workspace '{1-6}'
+super+7
+    i3-msg workspace '7 '
+super+8
+    i3-msg workspace '8 '
+super+9
+    i3-msg workspace '9 '
+
+super+z 
+    i3-msg workspace prev
+super+x 
+    i3-msg workspace next
+
+super+shift+{1-6}
+    i3-msg move container to workspace '{1-6}'
+super+shift+7
+    i3-msg move container to workspace '7 '
+super+shift+8
+    i3-msg move container to workspace '8 '
+super+shift+9
+    i3-msg move container to workspace '9 '
+
+# split in horizontal orientation
+super+h
+    i3-msg split h
+
+# split in vertical orientation
+super+v
+    i3-msg split v
+
+# change container layout (stacked, tabbed, toggle split)
+super+s
+    i3-msg layout stacking
+super+w
+    i3-msg layout tabbed
+super+e
+    i3-msg layout toggle split
+
+# toggle tiling / floating
+super+shift+space
+    i3-msg floating toggle
+
+# change focus between tiling / floating windows
+super+space
+    i3-msg focus mode_toggle
+
+# focus the parent container
+super+a
+    i3-msg focus parent
+
+# focus the child container
+super+d
+    i3-msg focus child
+
+# move workspace between outputs
+super+shift+n
+    i3-msg move workspace to output left
+super+shift+m
+    i3-msg move workspace to output right
+
+# focus workspace on other output
+super+m
+    i3-msg focus output left
+
+Print 
+    scrot $HOME/Pictures/scrot-%Y-%m-%d_%T.png
+
+super+Print
+    sleep 0.2;\
+    scrot -s $HOME/Pictures/scrot-%Y-%m-%d_%T.png
+
+XF86AudioMute 
+    pactl set-sink-mute 0 toggle
+
+XF86AudioRaiseVolume 
+    pactl set-sink-volume 0 +5%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume 0 -5%
+    
+XF86AudioMicMute
+    ~/.config/polybar/v1/scripts/microphone.sh --toggle 
+
+# additional X1 Carbon buttons
+#bindsym XF86Tools    exec "urxvt -e htop"
+#bindsym XF86Search   exec "recoll"
+#bindsym XF86LaunchA  exec "pavucontrol"
+#bindsym XF86Explorer exec "nautilus"
+
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10

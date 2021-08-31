@@ -1,0 +1,209 @@
+{
+    "C_Cpp.updateChannel": "Insiders",
+    "explorer.confirmDragAndDrop": false,
+
+    "editor.fontSize": 20,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "nix.enableLanguageServer": true,
+    "explorer.confirmDelete": false,
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "python.languageServer": "Microsoft",
+    "editor.tabSize": 2,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/bulentk/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    "[java]": {
+    
+        "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    "workbench.iconTheme": "vscode-icons",
+
+    "workbench.colorCustomizations": {
+        "editor.foreground": "#E8E2B7"
+    },
+
+    "editor.tokenColorCustomizations": {
+        "strings": "#E8E2B7",
+        "numbers": "#FFFFFF",
+        "keywords": "#7CA5C5",
+        "functions": "#FF7F7A",
+        "comments": "#60767D",
+        "textMateRules": [
+            {
+                "scope": "keyword.operator",
+                "settings": {
+                    "foreground": "#FFFFFF",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "variable.other",
+                "settings": {
+                    "foreground": "#E8E2B7",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "storage.type.annotation",
+                "settings": {
+                    "foreground": "#9C9C9C",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "storage.modifier.import.java",
+                "settings": {
+                    "foreground": "#E8E2B7",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "storage.modifier.package.java",
+                "settings": {
+                    "foreground": "#E8E2B7",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "storage.type",
+                "settings": {
+                    "foreground": "#7CA5C5",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "storage.type.generic.wildcard.java",
+                "settings": {
+                    "foreground": "#FFFFFF",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "entity.name.type",
+                "settings": {
+                    "foreground": "#7CA5C5",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "entity.name.class",
+                "settings": {
+                    "foreground": "#7CA5C5",
+                    "fontStyle": ""
+                }
+            },
+
+            {
+                "scope": "entity.name.type.parameter",
+                "settings": {
+                    "foreground": "#FFFFFF",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "entity.name.function.member.static",
+                "settings": {
+                    "foreground": "#FF7F7A",
+                    "fontStyle": "italic"
+                }
+            },
+
+            {
+                "scope": "entity.name.namespace",
+                "settings": {
+                    "foreground": "#E8E2B7",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "entity.other.inherited-class",
+                "settings": {
+                    "foreground": "#7CA5C5",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "keyword.other.import",
+                "settings": {
+                    "foreground": "#7CA5C5",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "keyword.other.package",
+                "settings": {
+                    "foreground": "#7CA5C5",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "keyword.declaration",
+                "settings": {
+                    "foreground": "#7CA5C5",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "keyword.interpolation",
+                "settings": {
+                    "foreground": "#FFFFFF",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "variable.other.enummember",
+                "settings": {
+                    "foreground": "#FFC0CB",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "variable.other.property.static",
+                "settings": {
+                    "foreground": "#FFC0CB",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "variable.language.this.java",
+                "settings": {
+                    "foreground": "#7CA5C5",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "entity.other.inherited-class.scala",
+                "settings": {
+                    "foreground": "#7CA5C5",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "constant.language",
+                "settings": {
+                    "foreground": "#7CA5C5",
+                    "fontStyle": "bold"
+                }
+            },
+
+        ]
+
+
+    },
+    "workbench.colorTheme": "Solarized Dark",
+    "metals.showImplicitArguments": true,
+    "metals.showImplicitConversionsAndClasses": true,
+    "metals.showInferredType": true,
+    "metals.superMethodLensesEnabled": true,
+    "editor.largeFileOptimizations": false,
+}

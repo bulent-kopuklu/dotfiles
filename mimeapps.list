@@ -1,0 +1,18 @@
+[Default Applications]
+x-scheme-handler/mailto=userapp-Thunderbird-GWRJZ0.desktop
+message/rfc822=userapp-Thunderbird-GWRJZ0.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-L0YA80.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+inode/directory=nautilus-autorun-software.desktop
+application/pdf=org.gnome.Evince.desktop
+
+[Added Associations]
+x-scheme-handler/mailto=userapp-Thunderbird-Z5XCY0.desktop;userapp-Thunderbird-QIQ8Y0.desktop;userapp-Thunderbird-GWRJZ0.desktop;
+message/rfc822=userapp-Thunderbird-Z5XCY0.desktop;userapp-Thunderbird-QIQ8Y0.desktop;userapp-Thunderbird-GWRJZ0.desktop;
+application/pdf=org.gnome.Evince.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-TS7KZ0.desktop;userapp-Telegram Desktop-ATPJ50.desktop;userapp-Telegram Desktop-L0YA80.desktop;
