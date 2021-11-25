@@ -34,7 +34,7 @@ super+f
     i3-msg fullscreen
 
 super+l
-    i3lock
+    i3lock -c "#000000"
 
 super+Tab
     i3-msg workspace back_and_forth

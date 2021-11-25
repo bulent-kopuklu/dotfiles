@@ -1,0 +1,7 @@
+[user]
+	email = bulentk@encom.net
+	name = bulentk
+[http]
+	sslVerify = false
+[pull]
+	rebase = true
